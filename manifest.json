@@ -6,7 +6,7 @@
   "icons": {
     "128": "icons/128.png"
   },
-  "description": "Avoid closing tabs with familiar <Ctrl-W> readline binding. Assign custom bindings to Close Tab and Delete Back Word.",
+  "description": "Avoid closing tabs with <Ctrl-W>, which developers commonly use to Delete Back Word.",
   "incognito": "spanning",
   "background": {
     "service_worker": "background.js",
