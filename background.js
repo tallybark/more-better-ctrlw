@@ -10,18 +10,17 @@ chrome.commands.onCommand.addListener(command => {
     });
   }
   else if (command === "deleteBackWord") {
-    chrome.tabs.query({active: true, lastFocusedWindow: true}, function(tab) {
-      chrome.tabs.sendMessage(
-        tab[0].id,
-        {action: 'deleteBackWord'},
-        // If we omit this handler, Chrome Extensions page shows error:
-        //   Uncaught (in promise) Error: A listener indicated an asynchronous
-        //   response by returning true, but the message channel closed before
-        //   a response was received
-        // - ALTLY: Don't `return true` from content script, and then we don't
-        //   need this callbacK.
-        (response) => {},
-      );
+    chrome.tabs.query({active: true, lastFocusedWindow: true}, async function(tab) {
+      try {
+        await chrome.scripting.executeScript({
+          target: {
+            tabId: tab[0].id,
+          },
+          files: ["content.js"],
+        });
+      } catch (err) {
+        console.error(`failed to execute more-better-ctrlw script: ${err}`);
+      }
     });
   }
 });
