@@ -62,11 +62,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
   // https://github.com/1995eaton/chromium-vim/blob/1.2.99/content_scripts/messenger.js#L206-L212
   switch (request.action) {
     case 'deleteBackWord':
-      //if (!insertMode && DOM.isEditable(document.activeElement)) {
       if (DOM.isEditable(document.activeElement)) {
-        // Mappings.insertFunctions.deleteWord();
-        // if (Command.commandBarFocused() && Command.type === 'action')
-        //   Command.complete(Command.input.value);
         modify('extend', 'left', 'word');
         deleteSelection();
       }
