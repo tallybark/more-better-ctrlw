@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Better Ctrl-W",
   "version": "0.1",
   "icons": {
@@ -7,8 +7,8 @@
   },
   "description": "Closes highlighted tabs. To replace ctrl-w on Windows/Linux for Vim users!",
   "background": {
-    "scripts": ["background.js"]},
-    "persistent": false,
+    "service_worker": "background.js",
+    "type": "module"
   },
   "commands": {
     "close-highlighted-windows": {"description": "Close highlighted tabs"},
