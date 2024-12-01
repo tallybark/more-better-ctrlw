@@ -1,12 +1,17 @@
 {
-  "background": {"persistent": false, "scripts": ["background.js"]},
+  "manifest_version": 2,
+  "name": "Better Ctrl-W",
+  "version": "0.1",
+  "icons": {
+    "128": "icons/128.png"
+  },
+  "description": "Closes highlighted tabs. To replace ctrl-w on Windows/Linux for Vim users!",
+  "background": {
+    "scripts": ["background.js"]},
+    "persistent": false,
+  },
   "commands": {
     "close-highlighted-windows": {"description": "Close highlighted tabs"},
     "do-nothing": {"description": "Do absolutely nothing"}
-  },
-  "description": "Closes highlighted tabs. To replace ctrl-w on Windows/Linux for Vim users!",
-  "icons": {"128": "icons/128.png"},
-  "manifest_version": 2,
-  "name": "Better Ctrl-W",
-  "version": "0.1"
+  }
 }
