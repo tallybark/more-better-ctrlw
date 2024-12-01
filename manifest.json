@@ -8,9 +8,6 @@
   },
   "description": "Avoid closing tabs with familiar <Ctrl-W> readline binding. Assign custom bindings to Close Tab and Delete Back Word.",
   "incognito": "spanning",
-  "permissions": [
-    "activeTab"
-  ],
   "background": {
     "service_worker": "background.js",
     "type": "module"
