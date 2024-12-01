@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "More Better Ctrl-W",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "more-better-ctrl-w@tallybark.com",
   "icons": {
     "128": "icons/128.png"
