@@ -8,12 +8,20 @@
   },
   "description": "Closes highlighted tabs. To replace ctrl-w on Windows/Linux for Vim users!",
   "incognito": "spanning",
+  "permissions": [
+    "activeTab"
+  ],
   "background": {
     "service_worker": "background.js",
     "type": "module"
   },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }],
   "commands": {
     "close-highlighted-windows": {"description": "Close highlighted tabs"},
-    "do-nothing": {"description": "Do absolutely nothing"}
+    "do-nothing": {"description": "Do absolutely nothing"},
+    "deleteBackWord": {"description": "Delete back word"}
   }
 }

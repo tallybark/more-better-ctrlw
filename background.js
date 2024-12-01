@@ -9,4 +9,9 @@ chrome.commands.onCommand.addListener(command => {
       chrome.tabs.remove(tabs.map(tab => tab.id));
     });
   }
+  else if (command === "deleteBackWord") {
+    chrome.tabs.query({active: true, lastFocusedWindow: true}, function(tab) {
+      chrome.tabs.sendMessage(tab[0].id, {action: 'deleteBackWord'});
+    });
+  }
 });
