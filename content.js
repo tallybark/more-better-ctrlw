@@ -73,6 +73,11 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
       break;
     }
 
+    // This return value is unused by background.js.
+    // - We could omit it, in which case background.js doesn't
+    //   need to include a response callback to handle it.
+    // - But we'll leave it for illustrative purposes.
+    // - See comment in background.js for more.
     return true;
   }
 );
