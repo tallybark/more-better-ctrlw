@@ -6,7 +6,7 @@
   "icons": {
     "128": "icons/128.png"
   },
-  "description": "Close highlighted tabs using custom keybinding, e.g., <Alt-W>. Assign no-op to any keybinding, e.g., <Ctrl-W>. Assign delete back word to custom keybinding, e.g., <Ctrl-W>. Target audience is developers who are used to <Ctrl-W> deleting previous word (what readline calls unix-word-rubout). Source at ",
+  "description": "Avoid closing tabs with familiar <Ctrl-W> readline binding. Assign custom bindings to Close Tab and Delete Back Word.",
   "incognito": "spanning",
   "permissions": [
     "activeTab"
