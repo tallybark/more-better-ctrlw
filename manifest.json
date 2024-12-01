@@ -6,7 +6,7 @@
   "icons": {
     "128": "icons/128.png"
   },
-  "description": "Closes highlighted tabs. To replace ctrl-w on Windows/Linux for Vim users!",
+  "description": "Close highlighted tabs using custom keybinding, e.g., <Alt-W>. Assign no-op to any keybinding, e.g., <Ctrl-W>. Assign delete back word to custom keybinding, e.g., <Ctrl-W>. Target audience is developers who are used to <Ctrl-W> deleting previous word (what readline calls unix-word-rubout). Source at ",
   "incognito": "spanning",
   "permissions": [
     "activeTab"

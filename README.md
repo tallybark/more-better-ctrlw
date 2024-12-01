@@ -1,3 +1,78 @@
+# *More Better* Ctrl-W
+
+This is a fork of [``better-ctrlw``](https://github.com/thalesmello/better-ctrlw)
+with the following changes:
+
+- Update to Chrome Extensions Manifest file format version 3, as version 2 is now deprecated.
+
+- Add new command, *Delete back word*, that deletes word before the cursor
+  in the focused edit control.
+
+  - ALERT: Note that Chrome doesn't allow an Extension to interact with
+    the address bar, other than to read or set the URL, but otherwise
+    an extension cannot determine if the address bar has focus, or if
+    the user has typed any additional input.
+
+    Consequently, if the address bar has focus and you run the
+    *Delete back word* command, it may instead delete the previous
+    word from whatever input control on the page last had focus.
+
+    Your best bet might be to use your window manager to implement
+    this feature instead (and to leave this command disabled in this
+    extension).
+
+    - If you're on a Mac, consider using [Hammerspoon](https://www.hammerspoon.org/)
+      (see below for how the author does it).
+
+    - If you're on GNOME, there's probably a way to do it with a
+      [GNOME Shell Extension](https://extensions.gnome.org/), but
+      the author is still running MATE (which uses the Marco window
+      manager), and I haven't dug into this.
+
+- Add an [MIT license](https://github.com/landonb/more-better-ctrlw/blob/release/LICENSE).
+
+## Installation
+
+You can install this extension manually.
+
+- This is especially useful if you sync extensions via your Google account,
+  and you'd rather not have this extension loaded on all your hosts.
+
+  - Specifically to the author, I use a [Hammerspoon](https://www.hammerspoon.org/)
+    Spoon to manage ``<Ctrl-W>``:
+
+    https://github.com/DepoXy/macOS-Hammyspoony/blob/1.3.0/Source/AppTapChrome.spoon/init.lua#L86-L99
+
+    By using Hammerspoon, ``<Ctrl-W>`` also works in the address bar.
+
+    And I use macOS Settings > Keyboard Shorcuts to remap Close Tab to ``<Alt-W>``.
+
+- To install this extension manually, clone this repository and then
+  install it:
+
+  - Open Chrome Extensions (chrome://extensions).
+
+  - Enable *Developer mode*.
+
+  - Remove existing *Better Ctrl-W* extension, if installed.
+
+  - Click *Load unpacked* button (upper-left), navigate to the directory
+    you cloned to, and click *Select*.
+
+  - And then configure the extension, e.g.,
+
+    - Click *Keyboard shortcuts*
+
+      - Assign "Alt + W" to *More Better Ctrl-W* > Close highlighted tabs
+
+      - Assign "Ctrl + W" to *More Better Ctrl-W* > Delete back word
+
+    - Click *Details*
+
+      - Enable ✓ *Allow in Incognito*
+
+*The [original ``better-ctrlw`` README](https://github.com/thalesmello/better-ctrlw/blob/ac0265ab9264ea6c6038df9d1b0fb671705b6955/README.md) follows:*
+
 # Better Ctrl-W
 
 Vim users are used to using the `Ctrl-w` key combination for deleting the  last
