@@ -33,7 +33,10 @@ with the following changes:
 
 ## Installation
 
-You can install this extension manually.
+You can install this extension
+[from the Chrome Web Store](https://chromewebstore.google.com/detail/more-better-ctrl-w/fhgdipcimngeleeemdhkinodbkkmcgjm?pli=1).
+
+Or you can install this extension manually:
 
 - This is especially useful if you sync extensions via your Google account,
   and you'd rather not have this extension loaded on all your hosts.
