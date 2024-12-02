@@ -36,19 +36,26 @@ with the following changes:
 You can install this extension
 [from the Chrome Web Store](https://chromewebstore.google.com/detail/more-better-ctrl-w/fhgdipcimngeleeemdhkinodbkkmcgjm?pli=1).
 
-Or you can install this extension manually:
+Or you can install this extension manually.
 
 - This is especially useful if you sync extensions via your Google account,
   and you'd rather not have this extension loaded on all your hosts.
 
-  - Specifically to the author, I use a [Hammerspoon](https://www.hammerspoon.org/)
-    Spoon to manage ``<Ctrl-W>``:
+  - Specifically to the author, I use [Hammerspoon](https://www.hammerspoon.org/)
+    to manage ``<Ctrl-W>`` on macOS.
 
-    https://github.com/DepoXy/macOS-Hammyspoony/blob/1.3.0/Source/AppTapChrome.spoon/init.lua#L86-L99
+    - By using Hammerspoon, ``<Ctrl-W>`` (Delete Back Word) also works in the
+      address bar.
 
-    By using Hammerspoon, ``<Ctrl-W>`` also works in the address bar.
+      You can find the Spoon code here:
 
-    And I use macOS Settings > Keyboard Shorcuts to remap Close Tab to ``<Alt-W>``.
+      [https://github.com/DepoXy/macOS-Hammyspoony/blob/1.3.0/Source/AppTapChrome.spoon/init.lua#L86-L99](https://github.com/DepoXy/macOS-Hammyspoony/blob/1.3.0/Source/AppTapChrome.spoon/init.lua#L86-L99)
+
+    - Also on macOS, it's easy to use macOS Settings > Keyboard Shortcuts
+      to remap the "Close Tab" menu item to ``<Alt-W>``.
+
+    - As such, the author only uses this extension on Linux, and I install
+      it manually, and not through the Chrome Web Store.
 
 - To install this extension manually, clone this repository and then
   install it:
@@ -57,7 +64,8 @@ Or you can install this extension manually:
 
   - Enable *Developer mode*.
 
-  - Remove existing *Better Ctrl-W* extension, if installed.
+  - Remove existing *More Better Ctrl-W* or *Better Ctrl-W* extensions,
+    if installed.
 
   - Click *Load unpacked* button (upper-left), navigate to the directory
     you cloned to, and click *Select*.
