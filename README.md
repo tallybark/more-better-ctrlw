@@ -82,6 +82,21 @@ Or you can install this extension manually.
 
       - Enable ✓ *Allow in Incognito*
 
+## See also
+
+See also these related Chrome extension(s):
+
+- *Defenestration*
+
+  *Define custom keyboard shortcuts for window and tab operations*
+
+  Created by the venerable [Tim Pope](https://github.com/tpope)
+  of Vim plugin fame (the "Vim plugin artist").
+
+  https://chromewebstore.google.com/detail/defenestration/ddemkjlllpgejdmfgipekedligkfchcj
+
+  Source: https://github.com/tpope/chrome-defenestration
+
 *The [original ``better-ctrlw`` README](https://github.com/thalesmello/better-ctrlw/blob/ac0265ab9264ea6c6038df9d1b0fb671705b6955/README.md) follows:*
 
 # Better Ctrl-W
